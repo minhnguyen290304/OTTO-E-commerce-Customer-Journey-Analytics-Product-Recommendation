@@ -1,6 +1,6 @@
 # OTTO E-commerce Customer Journey Analytics & Product Recommendation
 
-<img src="https://spinscale.de/posts/2020-06-22-implementing-a-modern-ecommerce-search/mainsite-otto.png" width="90%">
+<img src="https://spinscale.de/posts/2020-06-22-implementing-a-modern-ecommerce-search/mainsite-otto.png" width="100%">
 
 ## Project Overview
 
