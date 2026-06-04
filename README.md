@@ -1,6 +1,6 @@
 # OTTO E-commerce Customer Journey Analytics & Product Recommendation
 
-<img src="https://spinscale.de/posts/2020-06-22-implementing-a-modern-ecommerce-search/mainsite-otto.png" width="80%">
+<img src="https://spinscale.de/posts/2020-06-22-implementing-a-modern-ecommerce-search/mainsite-otto.png" width="90%">
 
 ## Project Overview
 
@@ -17,12 +17,18 @@ The objective is to demonstrate how customer journey analytics can support both 
 
 ## Business Objectives
 
-The project focuses on four key business questions:
+This project aims to understand how customers navigate through an e-commerce platform, identify factors influencing conversion outcomes, and explore how behavioral patterns can be leveraged to support product recommendation strategies.
 
-- How do customers interact with products throughout their shopping sessions?
-- Where do the largest conversion drop-offs occur within the purchasing funnel?
-- Which products contribute most effectively to customer engagement and conversion?
-- How can customer navigation patterns be utilized to improve product recommendations?
+The analysis focuses on four key business questions:
+
+1. How do customers browse, revisit, and interact with products throughout their shopping journeys?
+
+2. Where do the largest drop-offs occur between product views, cart additions, and completed purchases?
+
+3. Which products demonstrate the strongest performance in terms of engagement, cart activity, conversion, and purchasing behavior?
+
+4. How can customer navigation patterns and product transition relationships be utilized to generate more relevant product recommendations?
+
 
 ---
 
@@ -170,7 +176,7 @@ The transition distribution reveals that approximately **84% of all transitions 
 
 ---
 
-## 6. Recommendation Framework
+# 6. Recommendation Framework
 
 While the primary focus of this project is customer journey analytics, the transition patterns identified throughout the analysis were further leveraged to develop a recommendation framework in Python.
 
@@ -240,7 +246,7 @@ Integrate transition-based recommendation logic into the shopping experience to 
 
 ## Author
 
-**Minh Nguyen**
+**Minh Nguyen** 🐧
 
 ---
 
