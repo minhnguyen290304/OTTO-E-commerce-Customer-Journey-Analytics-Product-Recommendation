@@ -269,6 +269,14 @@ Integrate transition-based recommendation logic into the shopping experience to 
 
 ---
 
+## Power BI Dashboard
+
+📊 **Download PBIX Dashboard**
+
+[Download PBIX Dashboard](https://drive.google.com/file/d/1iEkpKbp3k6FNa-JsEFB3aLZuKSAIS8GN/view?usp=sharing)
+
+---
+
 ## Author
 
 **Minh Nguyen** 🐧
