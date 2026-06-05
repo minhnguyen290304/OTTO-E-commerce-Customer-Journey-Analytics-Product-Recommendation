@@ -1,4 +1,6 @@
-# OTTO E-commerce Customer Journey Analytics & Product Recommendation
+# 🛒 OTTO E-commerce Customer Journey Analytics & Product Recommendation
+
+---
 
 <img src="https://spinscale.de/posts/2020-06-22-implementing-a-modern-ecommerce-search/mainsite-otto.png" width="100%">
 
@@ -12,10 +14,38 @@ Beyond traditional descriptive analytics, the project also develops a transition
 
 The objective is to demonstrate how customer journey analytics can support both business decision-making and recommendation system development.
 
+#### The project consists of 8 main parts:
+
+```text
+1. Business Objectives
+      
+2. Dataset Overview
+      
+3. Project Workflow
+      
+4. Executive Summary
+      
+5. Analytical Findings
+      
+      5.1. Customer Behavior Analysis
+
+      5.2 Product Performance Analysis
+
+      5.3 Time-based Analysis
+
+      5.4. Customer Journey & Transition Analysis
+
+6. Recommendation Framework
+
+7. Key Business Insights
+
+8. Business Recommendations
+
+```
 
 ---
 
-## Business Objectives
+## 1. Business Objectives
 
 This project aims to understand how customers navigate through an e-commerce platform, identify factors influencing conversion outcomes, and explore how behavioral patterns can be leveraged to support product recommendation strategies.
 
@@ -32,7 +62,7 @@ The analysis focuses on four key business questions:
 
 ---
 
-## Dataset Overview
+## 2. Dataset Overview
 
 The dataset originates from the <a href="https://www.kaggle.com/competitions/otto-recommender-system/overview">OTTO Recommender Systems Challenge</a> and contains customer interaction data collected from one of Europe's largest online retailers.
 
@@ -63,7 +93,7 @@ The final analytical dataset contains:
 
 ---
 
-# Project Workflow
+## 3. Project Workflow
 
 ```text
 Raw Event Data
@@ -97,10 +127,9 @@ Finally, insights from both the analytics and recommendation components are cons
 | <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black"> | Dashboard development and business intelligence reporting |
 
 
-
 ---
 
-# Executive Summary
+## 4. Executive Summary
 
 <img src="dashboard preview/executive summary.png" width="100%">
 
@@ -114,9 +143,9 @@ Beyond descriptive analytics, customer navigation patterns were utilized to deve
 
 ---
 
-# 5. Analytical Findings
+## 5. Analytical Findings
 
-## 5.1 Customer Behavior Analysis
+### 5.1. Customer Behavior Analysis
 
 <img src="dashboard preview/user behavior analysis.png" width="100%">
 
@@ -126,7 +155,7 @@ More than half of all sessions (56.95%) remain in a browsing stage without progr
 
 ---
 
-## 5.2 Product Performance Analysis
+### 5.2. Product Performance Analysis
 
 <img src="dashboard preview/product analysis.png" width="100%">
 
@@ -147,7 +176,7 @@ Key business implications include:
 
 ---
 
-## 5.3 Time-Based Analysis
+### 5.3. Time-based Analysis
 
 <img src="dashboard preview/time analysis.png" width="100%">
 
@@ -158,7 +187,7 @@ Traffic volume peaks during evening hours, while conversion performance reaches 
 
 ---
 
-## 5.4 Customer Journey & Transition Analysis
+### 5.4. Customer Journey & Transition Analysis
 
 <img src="dashboard preview/transition analysis p1.png" width="100%">
 
@@ -176,7 +205,7 @@ The transition distribution reveals that approximately **84% of all transitions 
 
 ---
 
-# 6. Recommendation Framework
+## 6. Recommendation Framework
 
 While the primary focus of this project is customer journey analytics, the transition patterns identified throughout the analysis were further leveraged to develop a recommendation framework in Python.
 
@@ -200,7 +229,7 @@ The framework was inspired by session-based recommendation methodologies commonl
 
 ---
 
-# 7. Key Business Insights
+## 7. Key Business Insights
 
 ### Insight 1: High Engagement Does Not Necessarily Translate into Purchases
 
@@ -220,7 +249,7 @@ Products frequently viewed or purchased together create natural recommendation o
 
 ---
 
-# 8. Business Recommendations
+## 8. Business Recommendations
 
 ### Improve Product Discovery
 
