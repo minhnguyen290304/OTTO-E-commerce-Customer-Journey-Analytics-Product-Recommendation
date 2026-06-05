@@ -37,7 +37,6 @@ The objective is to demonstrate how customer journey analytics can support both 
 7. Key Business Insights
 
 8. Business Recommendations
-
 ```
 
 ---
