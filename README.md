@@ -18,27 +18,16 @@ The objective is to demonstrate how customer journey analytics can support both 
 
 ```text
 1. Business Objectives
-      
 2. Dataset Overview
-      
 3. Project Workflow
-      
 4. Executive Summary
-      
 5. Analytical Findings
-      
       5.1. Customer Behavior Analysis
-
       5.2 Product Performance Analysis
-
       5.3 Time-based Analysis
-
       5.4. Customer Journey & Transition Analysis
-
 6. Recommendation Framework
-
 7. Key Business Insights
-
 8. Business Recommendations
 
 ```
