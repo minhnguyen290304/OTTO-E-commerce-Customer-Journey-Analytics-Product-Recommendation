@@ -245,7 +245,7 @@ Products frequently viewed or purchased together create natural recommendation o
 
 ---
 
-8. Business Recommendations
+# 8. Business Recommendations
 
 ### Improve Product Discovery
 
