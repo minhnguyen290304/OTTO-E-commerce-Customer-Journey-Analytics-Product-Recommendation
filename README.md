@@ -34,9 +34,11 @@ The objective is to demonstrate how customer journey analytics can support both 
 
 6. Recommendation Framework
 
-7. Key Business Insights
+7. Power Automation
 
-8. Business Recommendations
+8. Key Business Insights
+
+9. Business Recommendations
 ```
 
 ---
@@ -104,6 +106,8 @@ Recommendation Model Development (Python)
       ↓
 Interactive Dashboard Development (Power BI)
       ↓
+Power BI Automation (Power Automate)
+      ↓
 Business Insights & Recommendations
 ```
 
@@ -111,7 +115,9 @@ The project begins by validating and preparing large-scale clickstream data usin
 
 Customer navigation paths are subsequently reconstructed to identify common transitions between viewed, carted, and purchased products. These transition patterns form the foundation of a recommendation framework developed in Python, enabling next-product suggestions based on observed customer behavior.
 
-Finally, insights from both the analytics and recommendation components are consolidated into an interactive Power BI dashboard designed to support business decision-making.
+Insights from both the analytics and recommendation components are consolidated into an interactive Power BI dashboard designed to support business decision-making.
+
+The project was further extended with Power Automate to automate recurring Power BI operations and reduce manual reporting tasks. The automation layer connects Power BI dashboards with scheduled dataset refreshes, KPI alert notifications, and automated PDF report distribution.
 
 <b>🔧 Tools Used: </b>
 <br>
@@ -119,8 +125,9 @@ Finally, insights from both the analytics and recommendation components are cons
 | Tool | Purpose |
 |--------|---------|
 | <img src="https://img.shields.io/badge/MS_SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"> | Data validation, cleaning, transformation, and analytical queries |
-| <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">| Recommendation framework development and transition analysis |
+| <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> | Recommendation framework development and transition analysis |
 | <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black"> | Dashboard development and business intelligence reporting |
+| <img src="https://img.shields.io/badge/Power_Automate-0066FF?style=flat-square&logo=powerautomate&logoColor=white"> | Workflow automation, scheduled dataset refresh, KPI alert notifications, and automated PDF report distribution |
 
 
 ---
@@ -225,7 +232,89 @@ The framework was inspired by session-based recommendation methodologies commonl
 
 ---
 
-# 7. Key Business Insights
+# 7. Power Automation
+
+To extend the project beyond dashboard development, Power Automate was integrated to automate recurring reporting and monitoring tasks.
+
+The automation layer consists of three Power Automate flows:
+
+```text
+Power BI Dataset
+      ↓
+┌─────────────────────────────────────────────┐
+│              Power Automate                 │
+│                                             │
+│  1. Scheduled Dataset Refresh               │
+│  2. Alert Notification                      │
+│  3. Automated PDF Report Export             │
+└─────────────────────────────────────────────┘
+      ↓
+Automated Reporting & Monitoring
+```
+## 7.1 Scheduled Dataset Refresh
+
+The first flow automates the Power BI dataset refresh process on a predefined schedule.
+
+**Workflow:**
+
+```text
+Recurrence
+    ↓
+Refresh a dataset (Power BI)
+    ↓
+Condition
+   ├── Success → Send email notification
+   └── Failed  → Send failure notification
+```
+The flow reduces the need for manual dataset refreshes and provides an automated notification when the refresh process is completed.
+
+The scheduled refresh is configured to run periodically, ensuring that the Power BI dashboard is based on the latest available data.
+
+**Flow and Email Notification:**
+
+## 7.2 Alert Notification
+
+The second flow connects Power BI data-driven alerts with Power Automate.
+
+A KPI alert is configured in Power BI and monitored through the Power Automate trigger:
+
+```text
+When a data-driven alert is triggered
+            ↓
+Power Automate
+            ↓
+Alert notification workflow
+```
+This allows the dashboard to move beyond passive reporting by automatically responding when a monitored KPI reaches the configured alert condition.
+
+For example, the project uses a conversion-related KPI as an alert trigger, allowing important changes in performance to be detected automatically.
+
+**Flow:**
+
+## 7.3 Automated Dashboard Report Export
+
+The third flow automates the distribution of the Power BI dashboard as a PDF report.
+
+**Workflow:**
+```text
+Recurrence
+    ↓
+Export To File for Power BI Reports
+    ↓
+Condition
+   ├── Success → Send email + PDF attachment
+   └── Failed  → Send failure notification
+```
+The flow exports the selected Power BI report in PDF format and automatically sends the generated report as an email attachment.
+
+This eliminates the need to manually export and distribute the dashboard report.
+
+**Flow and PDF Report Email:**
+
+
+---
+
+# 8. Key Business Insights
 
 ### Insight 1: High Engagement Does Not Necessarily Translate into Purchases
 
@@ -245,7 +334,7 @@ Products frequently viewed or purchased together create natural recommendation o
 
 ---
 
-# 8. Business Recommendations
+# 9. Business Recommendations
 
 ### Improve Product Discovery
 
