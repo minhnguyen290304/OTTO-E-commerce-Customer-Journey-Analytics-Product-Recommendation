@@ -6,13 +6,17 @@
 
 ## Project Overview
 
+## Project Overview
+
 Online retailers offer millions of products, giving customers an enormous range of choices. While product variety can improve customer satisfaction, it can also create decision fatigue, making it more difficult for shoppers to discover relevant products and complete purchases.
 
 This project analyzes over **41 million customer interaction events** from the OTTO e-commerce dataset - the largest German online shop with more than 10 million products from over 19,000 brands - to understand customer behavior, identify conversion opportunities, and uncover navigation patterns throughout the shopping journey.
 
-Beyond traditional descriptive analytics, the project also develops a transition-based recommendation framework that leverages customer navigation behavior to generate product recommendations based on observed browsing and purchasing patterns.
+Beyond traditional descriptive analytics, the project develops a transition-based recommendation framework that leverages customer navigation behavior to generate product recommendations based on observed browsing and purchasing patterns.
 
-The objective is to demonstrate how customer journey analytics can support both business decision-making and recommendation system development.
+The project is further extended with **Power Automate** to automate recurring Power BI operations, including scheduled dataset refreshes, KPI alert notifications, and automated PDF report distribution.
+
+The objective is to demonstrate how **customer journey analytics, recommendation techniques, business intelligence, and workflow automation** can be integrated into an end-to-end analytics solution to support both business decision-making and operational reporting.
 
 #### The project consists of 8 main parts:
 
@@ -45,9 +49,9 @@ The objective is to demonstrate how customer journey analytics can support both 
 
 # 1. Business Objectives
 
-This project aims to understand how customers navigate through an e-commerce platform, identify factors influencing conversion outcomes, and explore how behavioral patterns can be leveraged to support product recommendation strategies.
+This project aims to understand how customers navigate through an e-commerce platform, identify factors influencing conversion outcomes, explore how behavioral patterns can be leveraged to support product recommendation strategies, and automate recurring reporting and monitoring processes.
 
-The analysis focuses on four key business questions:
+The analysis focuses on five key business objectives:
 
 1. How do customers browse, revisit, and interact with products throughout their shopping journeys?
 
@@ -56,6 +60,8 @@ The analysis focuses on four key business questions:
 3. Which products demonstrate the strongest performance in terms of engagement, cart activity, conversion, and purchasing behavior?
 
 4. How can customer navigation patterns and product transition relationships be utilized to generate more relevant product recommendations?
+
+5. How can Power BI and Power Automate be integrated to automate dataset refreshes, KPI monitoring, and recurring report distribution?
 
 
 ---
@@ -272,6 +278,11 @@ The scheduled refresh is configured to run periodically, ensuring that the Power
 
 **Flow and Email Notification:**
 
+<img src="https://github.com/minhnguyen290304/OTTO-E-commerce-Customer-Journey-Analytics-Product-Recommendation/blob/main/power_automate/scheduled_refresh_flow.png?raw=true" width="100%">
+
+<img src="https://github.com/minhnguyen290304/OTTO-E-commerce-Customer-Journey-Analytics-Product-Recommendation/blob/main/power_automate/refresh_email.png?raw=true" width="100%">
+
+
 ## 7.2 Alert Notification
 
 The second flow connects Power BI data-driven alerts with Power Automate.
@@ -290,6 +301,8 @@ This allows the dashboard to move beyond passive reporting by automatically resp
 For example, the project uses a conversion-related KPI as an alert trigger, allowing important changes in performance to be detected automatically.
 
 **Flow:**
+
+<img src="https://github.com/minhnguyen290304/OTTO-E-commerce-Customer-Journey-Analytics-Product-Recommendation/blob/main/power_automate/alert_notification_flow.png?raw=true" width="100%">
 
 ## 7.3 Automated Dashboard Report Export
 
@@ -311,6 +324,9 @@ This eliminates the need to manually export and distribute the dashboard report.
 
 **Flow and PDF Report Email:**
 
+<img src="https://github.com/minhnguyen290304/OTTO-E-commerce-Customer-Journey-Analytics-Product-Recommendation/blob/main/power_automate/export_report_pdf_flow.png?raw=true" width="100%">
+
+<img src="https://github.com/minhnguyen290304/OTTO-E-commerce-Customer-Journey-Analytics-Product-Recommendation/blob/main/power_automate/export_email.png?raw=true" width="100%">
 
 ---
 
